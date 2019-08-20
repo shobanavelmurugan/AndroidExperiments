@@ -1,1 +1,1 @@
-include ':Expermient1', ':DataBinding', ':AndroidArchitectureComponents'
+include ':DataBinding', ':AndroidArchitectureComponents', ':MVVMDataBinding', ':mvvmlivedata', ':mvvmroomlivedatarecycle', ':dagger2example'

@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityMainBinding activityMainBinding=DataBindingUtil.setContentView(this, R.layout.activity_main);
-        activityMainBinding.setViewModel(new LoginViewModel(this));
+        activityMainBinding.setLoginViewModel(new LoginViewModel(this));
         activityMainBinding.executePendingBindings();
 
     }

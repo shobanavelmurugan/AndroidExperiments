@@ -35,23 +35,23 @@ public class LoginViewModel extends BaseObservable {
     }
 
     @Bindable
-    public String getUserEmail() {
+    public String getEmail() {
         return user.getEmail();
     }
 
-    public void setUserEmail(String email) {
+    public void setEmail(String email) {
         user.setEmail(email);
-        notifyPropertyChanged(BR.userEmail);
+        notifyPropertyChanged(BR.email);
     }
 
     @Bindable
-    public String getUserPassword() {
+    public String getPassword() {
         return user.getPassword();
     }
 
-    public void setUserPassword(String password) {
+    public void setPassword(String password) {
         user.setPassword(password);
-        notifyPropertyChanged(BR.userPassword);
+        notifyPropertyChanged(BR.password);
     }
 
     public void onLoginClicked() {
@@ -63,6 +63,6 @@ public class LoginViewModel extends BaseObservable {
     }
 
     public boolean isInputDataValid() {
-        return !TextUtils.isEmpty(getUserEmail()) && Patterns.EMAIL_ADDRESS.matcher(getUserEmail()).matches() && getUserPassword().length() > 5;
+        return !TextUtils.isEmpty(getEmail()) && Patterns.EMAIL_ADDRESS.matcher(getEmail()).matches() && getPassword().length() > 5;
     }
 }
