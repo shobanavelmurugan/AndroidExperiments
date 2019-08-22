@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     //injecting retrofit
     @Inject
     Retrofit retrofit;
+
     ListView listView;
 
     @Override
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ((MyApplication) getApplication()).getNetComponent().inject(this);
+        ((MyApplication) getApplication()).getNetComponent().inject1(this);
 
 
         listView=(ListView) findViewById(R.id.listViewHeroes);

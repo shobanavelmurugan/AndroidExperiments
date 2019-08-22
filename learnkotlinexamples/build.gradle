@@ -5,14 +5,13 @@ android {
 
 
     defaultConfig {
-        applicationId "com.innobot.dagger2example"
+        applicationId "com.innobot.learnkotlinexamples"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -23,10 +22,7 @@ android {
     }
 
 }
-//// this is for using apt for annotation processor
-//plugins {
-//    id "net.ltgt.apt" version "0.10"
-//}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -35,10 +31,4 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    //Retrofit dependency
-    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
-    //Dagger2 dependency
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.24'
-    implementation 'com.google.dagger:dagger:2.24'
 }
