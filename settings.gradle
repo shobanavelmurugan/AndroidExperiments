@@ -1,1 +1,1 @@
-include ':DataBinding', ':AndroidArchitectureComponents', ':MVVMDataBinding', ':mvvmlivedata', ':mvvmroomlivedatarecycle', ':dagger2example', ':mvvmarchitecturestructure', ':learnkotlinexamples'
+include ':DataBinding', ':AndroidArchitectureComponents', ':MVVMDataBinding', ':mvvmlivedata', ':mvvmroomlivedatarecycle', ':dagger2example', ':mvvmarchitecturestructure', ':learnkotlinexampleswithjava', ':learnkotlinwithoutjava'

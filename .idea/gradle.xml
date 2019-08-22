@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AndroidArchitectureComponents" />
+            <option value="$PROJECT_DIR$/DataBinding" />
+            <option value="$PROJECT_DIR$/MVVMDataBinding" />
+            <option value="$PROJECT_DIR$/dagger2example" />
+            <option value="$PROJECT_DIR$/learnkotlinexampleswithjava" />
+            <option value="$PROJECT_DIR$/learnkotlinwithoutjava" />
+            <option value="$PROJECT_DIR$/mvvmarchitecturestructure" />
+            <option value="$PROJECT_DIR$/mvvmlivedata" />
+            <option value="$PROJECT_DIR$/mvvmroomlivedatarecycle" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
