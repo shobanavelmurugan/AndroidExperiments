@@ -5,7 +5,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.innobot.learnkotlinwithoutjava"
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -20,6 +20,7 @@ android {
 }
 androidExtensions {
     experimental = true
+    defaultCacheImplementation = "HASH_MAP"
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

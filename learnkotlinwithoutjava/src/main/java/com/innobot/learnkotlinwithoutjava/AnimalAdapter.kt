@@ -12,12 +12,10 @@ import kotlinx.android.synthetic.main.animal_list_item.view.*
  */
 
 class AnimalAdapter(val items: ArrayList<String>, val context: Context) : RecyclerView.Adapter<ViewHolder>() {
-    // Inflates the item views
-    override fun onCreateViewHolder(parent: ViewGroup, p1: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(LayoutInflater.from(context).inflate(R.layout.animal_list_item, parent, false))
     }
 
-    // Binds each animal in the ArrayList to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.tvAnimalType?.text = items.get(position)
     }
@@ -26,9 +24,13 @@ class AnimalAdapter(val items: ArrayList<String>, val context: Context) : Recycl
     override fun getItemCount(): Int {
         return items.size
     }
+
+//    // Inflates the item views
 //    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
 //        return ViewHolder(LayoutInflater.from(context).inflate(R.layout.animal_list_item, parent, false))
 //    }
+//
+//    // Binds each animal in the ArrayList to a view
 //    override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
 //        holder?.tvAnimalType?.text = items.get(position)
 //    }
