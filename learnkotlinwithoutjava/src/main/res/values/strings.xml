@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LearnKotlinWithoutJava</string>
+    <string name="kt_variables">Kotlin Variables</string>
+
+</resources>
