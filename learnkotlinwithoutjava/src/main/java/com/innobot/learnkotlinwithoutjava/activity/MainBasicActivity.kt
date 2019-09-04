@@ -2,13 +2,15 @@ package com.innobot.learnkotlinwithoutjava.activity
 
 // Using R.layout.activity_main from the 'main' source set
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.View
-import android.widget.Toast
 import com.innobot.learnkotlinwithoutjava.R
 import com.innobot.learnkotlinwithoutjava.adapter.BasicSyntaxAdapter
+import com.innobot.learnkotlinwithoutjava.basicsyntax.KotlinBasicSyntax
+import com.innobot.learnkotlinwithoutjava.basicsyntax.KotlinControlFlow
 import kotlinx.android.extensions.CacheImplementation
 import kotlinx.android.extensions.ContainerOptions
 import kotlinx.android.synthetic.main.activity_basic.*
@@ -48,14 +50,76 @@ class MainBasicActivity : AppCompatActivity() {
         recycleView_basic_syntax_list.adapter = BasicSyntaxAdapter(this, basicSyntax)
         recycleView_basic_syntax_list.addOnItemClickListener(object : OnItemClickListener {
             override fun onItemClicked(position: Int, view: View) {
-                Toast.makeText(this@MainBasicActivity, "clicked on " + basicSyntax.get(position), Toast.LENGTH_SHORT).show()
+                validateList(position, view)
             }
         })
     }
 
+    private fun validateList(position: Int, view: View) {
+        if (position == 0) {
+            KotlinBasicSyntax().kotlinDataTypeSample()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 1) {
+            KotlinBasicSyntax().kotlinVariableSample()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 2) {
+            KotlinBasicSyntax().kotlinTypeConversion()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 3) {
+            KotlinBasicSyntax().kotlinOperators()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 4) {
+            KotlinBasicSyntax().kotlinInputOutput()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 5) {
+            KotlinBasicSyntax().kotlinComment()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 6) {
+            KotlinControlFlow().kotlinIfExpression()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 7) {
+            KotlinControlFlow().kotlinWhenExpression()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 8) {
+            KotlinControlFlow().kotlinForLoop()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 9) {
+            KotlinControlFlow().kotlinWhileLoop()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 10) {
+            KotlinControlFlow().kotlinDoWhileLoop()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 11) {
+            KotlinControlFlow().kotlinReturnAndJump()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+    }
+
     private fun loadBasicsList() {
+        /*  Add Values to ArrayList*/
+        basicSyntax.add("Kotlin Data Types")
         basicSyntax.add(getString(R.string.kt_variables)) // or
-        basicSyntax.add("Kotlin Variables")
+        basicSyntax.add(getString(R.string.kt_typeConvertion))
+        basicSyntax.add(getString(R.string.kt_operators))
+        basicSyntax.add(getString(R.string.kt_input_output))
+        basicSyntax.add(getString(R.string.kt_comment))
+        basicSyntax.add(getString(R.string.kt_if_expression))
+        basicSyntax.add(getString(R.string.kt_when_expression))
+        basicSyntax.add(getString(R.string.kt_for_loop))
+        basicSyntax.add(getString(R.string.kt_while_loop))
+        basicSyntax.add(getString(R.string.kt_do_while_loop))
+        basicSyntax.add(getString(R.string.kt_return))
     }
 }
 

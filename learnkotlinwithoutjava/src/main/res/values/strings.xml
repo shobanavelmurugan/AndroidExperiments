@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">LearnKotlinWithoutJava</string>
     <string name="kt_variables">Kotlin Variables</string>
+    <string name="kt_datatypes">Kotlin Data Types</string>
+    <string name="kt_typeConvertion">Kotlin Type Conversion</string>
+    <string name="kt_operators">Kotlin Operators</string>
+    <string name="kt_input_output">Kotlin Input/Output</string>
+    <string name="kt_comment">Kotlin Comment</string>
+    <string name="kt_if_expression">Kotlin If Expression</string>
+    <string name="kt_when_expression">Kotlin When Expression</string>
+    <string name="kt_for_loop">Kotlin For Loop</string>
+    <string name="kt_while_loop">Kotlin While Loop</string>
+    <string name="kt_do_while_loop">Kotlin Do While Loop</string>
+    <string name="kt_return">Kotlin Return and Jump</string>
+    <!--    <string name="kt_continue">Kotlin Continue Structure</string>-->
 
 </resources>

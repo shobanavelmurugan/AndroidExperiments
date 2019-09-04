@@ -21,12 +21,6 @@ class BasicSyntaxAdapter(val context: Context, var basicList: ArrayList<String>)
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.tvAnimalType?.text = basicList.get(position)
-//        holder?.tvAnimalType?.setOnClickListener {
-//            if (position==1)
-//            {
-//
-//            }
-//        }
     }
 
 }
