@@ -11,6 +11,7 @@ import com.innobot.learnkotlinwithoutjava.R
 import com.innobot.learnkotlinwithoutjava.adapter.BasicSyntaxAdapter
 import com.innobot.learnkotlinwithoutjava.basicsyntax.KotlinBasicSyntax
 import com.innobot.learnkotlinwithoutjava.basicsyntax.KotlinControlFlow
+import com.innobot.learnkotlinwithoutjava.basicsyntax.KotlinFunctions
 import kotlinx.android.extensions.CacheImplementation
 import kotlinx.android.extensions.ContainerOptions
 import kotlinx.android.synthetic.main.activity_basic.*
@@ -104,6 +105,26 @@ class MainBasicActivity : AppCompatActivity() {
             KotlinControlFlow().kotlinReturnAndJump()
             Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
         }
+        if (position == 12) {
+            KotlinFunctions().KotlinStandardFunction()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 13) {
+            KotlinFunctions().KotlinRecursionFunction()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 14) {
+            KotlinFunctions().KotlinDefaultAndNamedFunction()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 15) {
+            KotlinFunctions().KotlinLambdaAndHighOrderFunction()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
+        if (position == 16) {
+            KotlinFunctions().KotlinInlineFunction()
+            Snackbar.make(view, basicSyntax.get(position) + " See Logcat", Snackbar.LENGTH_LONG).show()
+        }
     }
 
     private fun loadBasicsList() {
@@ -120,6 +141,11 @@ class MainBasicActivity : AppCompatActivity() {
         basicSyntax.add(getString(R.string.kt_while_loop))
         basicSyntax.add(getString(R.string.kt_do_while_loop))
         basicSyntax.add(getString(R.string.kt_return))
+        basicSyntax.add(getString(R.string.kt_function))
+        basicSyntax.add(getString(R.string.kt_function_rec))
+        basicSyntax.add(getString(R.string.kt_function_default_named))
+        basicSyntax.add(getString(R.string.kt_lambda_order_fun))
+        basicSyntax.add(getString(R.string.kt_inline_function))
     }
 }
 

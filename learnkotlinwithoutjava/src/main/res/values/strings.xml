@@ -12,6 +12,9 @@
     <string name="kt_while_loop">Kotlin While Loop</string>
     <string name="kt_do_while_loop">Kotlin Do While Loop</string>
     <string name="kt_return">Kotlin Return and Jump</string>
-    <!--    <string name="kt_continue">Kotlin Continue Structure</string>-->
-
+    <string name="kt_function">Kotlin Function</string>
+    <string name="kt_function_rec">Kotlin Recursion Function</string>
+    <string name="kt_function_default_named">Kotlin Default and Named Function</string>
+    <string name="kt_lambda_order_fun">Kotlin Lambda and Order Function</string>
+    <string name="kt_inline_function">Kotlin inline Function</string>
 </resources>
