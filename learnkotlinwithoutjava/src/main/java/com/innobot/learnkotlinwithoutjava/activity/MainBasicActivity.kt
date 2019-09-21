@@ -1,6 +1,7 @@
 package com.innobot.learnkotlinwithoutjava.activity
 
 // Using R.layout.activity_main from the 'main' source set
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
@@ -19,8 +20,7 @@ import kotlinx.android.synthetic.main.activity_basic.*
 @ContainerOptions(CacheImplementation.SPARSE_ARRAY)
 class MainBasicActivity : AppCompatActivity() {
     // Initializing an empty ArrayList to be filled with animals
-    val animals: ArrayList<String> = ArrayList() // static Array List
-    var basicSyntax: ArrayList<String> = ArrayList()
+    var basicSyntax: ArrayList<String> = ArrayList()// static Array List
 
     var isShowList: Boolean = false
 
@@ -54,6 +54,10 @@ class MainBasicActivity : AppCompatActivity() {
                 validateList(position, view)
             }
         })
+        btnKotlinLang.setOnClickListener {
+            val intent = Intent(this, KotlinLanguageLearnActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun validateList(position: Int, view: View) {
